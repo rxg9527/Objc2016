@@ -36,6 +36,7 @@ static NSString *const kReuseCellID = @"XGCell";
 
     self.dataSourceArray = [NSArray yy_modelArrayWithClass:ChapterModel.class json:[[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Property List" ofType:@"plist"]]];
     [self.tableView registerClass:[XGCell class] forCellReuseIdentifier:kReuseCellID];
+    self.tableView.separatorInset = UIEdgeInsetsZero;
 }
 
 #pragma mark- UITableViewDataSource
@@ -56,6 +57,7 @@ static NSString *const kReuseCellID = @"XGCell";
     cell.textLabel.text = model.sectionTitle;
     cell.detailTextLabel.text = model.sectionTitle;
     cell.imageView.backgroundColor = [UIColor blueColor];
+    
     //右边的accessory
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 //    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
@@ -80,7 +82,8 @@ static NSString *const kReuseCellID = @"XGCell";
 //点击每一行的事件
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"点击了第%ld组第%ld行", indexPath.section, indexPath.row);
+    SectionModel *model = self.dataSourceArray[indexPath.section].content[indexPath.row];
+    [self.navigationController pushViewController:[NSClassFromString(model.vc) new] animated:YES];
 }
 
 @end

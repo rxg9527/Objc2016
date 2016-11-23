@@ -46,7 +46,7 @@
 //            [self setLeftButton:nil Image:@"back"];
         }
     }
-//    self.view.backgroundColor = ERPControllerBackgroundColor;
+    self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [self getNavigationTitleTextAttributes];
 }
 

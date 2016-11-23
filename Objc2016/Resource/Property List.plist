@@ -4,12 +4,14 @@
 <array>
 	<dict>
 		<key>Chapter</key>
-		<string>『7』隐式动画</string>
+		<string>Foundation</string>
 		<key>Content</key>
 		<array>
 			<dict>
 				<key>Section</key>
-				<string>事务</string>
+				<string>NSPredicate 谓词</string>
+				<key>vc</key>
+				<string>XGPredicateVC</string>
 			</dict>
 			<dict>
 				<key>Section</key>

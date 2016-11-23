@@ -11,5 +11,6 @@
 @interface SectionModel : NSObject
 
 @property (nonatomic, copy) NSString *sectionTitle;
+@property (nonatomic, copy) NSString *vc;
 
 @end
