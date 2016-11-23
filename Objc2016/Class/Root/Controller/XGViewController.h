@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface XGViewController : UIViewController <UIGestureRecognizerDelegate>
 
 - (void)setLeftButton:(NSString *)buttonTitle titleImage:(NSString *)TitleImage action:(SEL)action;
 

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JJViewController.h"
+#import "XGViewController.h"
 
-@interface ViewController : JJViewController
+@interface ViewController : XGViewController
 
 
 @end

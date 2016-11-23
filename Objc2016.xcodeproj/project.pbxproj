@@ -17,7 +17,8 @@
 		0C4EA4001DE558A500B1F462 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EA3F61DE558A500B1F462 /* SectionModel.m */; };
 		0C4EA4011DE558A500B1F462 /* XGCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EA3F91DE558A500B1F462 /* XGCell.m */; };
 		0C4EA4041DE55A4C00B1F462 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C4EA4031DE55A4C00B1F462 /* Property List.plist */; };
-		0C4EA40B1DE55B7700B1F462 /* JJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EA40A1DE55B7700B1F462 /* JJViewController.m */; };
+		0C4EA40B1DE55B7700B1F462 /* XGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EA40A1DE55B7700B1F462 /* XGViewController.m */; };
+		0C4EA40E1DE55D6800B1F462 /* XGPredicateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EA40D1DE55D6800B1F462 /* XGPredicateVC.m */; };
 		7FBBDD67784A420E2C8D703F /* libPods-Objc2016.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3EED91BDD8C2D8D23AD4E5 /* libPods-Objc2016.a */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +40,10 @@
 		0C4EA3F81DE558A500B1F462 /* XGCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCell.h; sourceTree = "<group>"; };
 		0C4EA3F91DE558A500B1F462 /* XGCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCell.m; sourceTree = "<group>"; };
 		0C4EA4031DE55A4C00B1F462 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
-		0C4EA4091DE55B7700B1F462 /* JJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJViewController.h; sourceTree = "<group>"; };
-		0C4EA40A1DE55B7700B1F462 /* JJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJViewController.m; sourceTree = "<group>"; };
+		0C4EA4091DE55B7700B1F462 /* XGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGViewController.h; sourceTree = "<group>"; };
+		0C4EA40A1DE55B7700B1F462 /* XGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGViewController.m; sourceTree = "<group>"; };
+		0C4EA40C1DE55D6800B1F462 /* XGPredicateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPredicateVC.h; sourceTree = "<group>"; };
+		0C4EA40D1DE55D6800B1F462 /* XGPredicateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGPredicateVC.m; sourceTree = "<group>"; };
 		0E3EED91BDD8C2D8D23AD4E5 /* libPods-Objc2016.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objc2016.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E50328EC508E0756E05C64E /* Pods-Objc2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objc2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objc2016/Pods-Objc2016.debug.xcconfig"; sourceTree = "<group>"; };
 		E9F631AE0406A8A30F904615 /* Pods-Objc2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objc2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objc2016/Pods-Objc2016.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,8 +133,8 @@
 			children = (
 				0C4EA3F01DE558A500B1F462 /* ViewController.h */,
 				0C4EA3F11DE558A500B1F462 /* ViewController.m */,
-				0C4EA4091DE55B7700B1F462 /* JJViewController.h */,
-				0C4EA40A1DE55B7700B1F462 /* JJViewController.m */,
+				0C4EA4091DE55B7700B1F462 /* XGViewController.h */,
+				0C4EA40A1DE55B7700B1F462 /* XGViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,8 @@
 		0C4EA4061DE55B3E00B1F462 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0C4EA40C1DE55D6800B1F462 /* XGPredicateVC.h */,
+				0C4EA40D1DE55D6800B1F462 /* XGPredicateVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,8 +338,9 @@
 				0C4EA3FF1DE558A500B1F462 /* ChapterModel.m in Sources */,
 				0C4EA4011DE558A500B1F462 /* XGCell.m in Sources */,
 				0C4EA3D51DE5588A00B1F462 /* main.m in Sources */,
+				0C4EA40E1DE55D6800B1F462 /* XGPredicateVC.m in Sources */,
 				0C4EA3FE1DE558A500B1F462 /* ViewController.m in Sources */,
-				0C4EA40B1DE55B7700B1F462 /* JJViewController.m in Sources */,
+				0C4EA40B1DE55B7700B1F462 /* XGViewController.m in Sources */,
 				0C4EA3EC1DE5589F00B1F462 /* AppDelegate.m in Sources */,
 				0C4EA4001DE558A500B1F462 /* SectionModel.m in Sources */,
 			);

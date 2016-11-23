@@ -6,9 +6,9 @@
 //  Copyright © 2016年 BBFC. All rights reserved.
 //
 
-#import "JJViewController.h"
+#import "XGViewController.h"
 
-@implementation JJViewController
+@implementation XGViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -87,7 +87,7 @@
 //导航栏左边按钮事件
 - (void)leftReturn:(UIButton *)sender
 {
-    if (![self isMemberOfClass:[JJViewController class]]) {
+    if (![self isMemberOfClass:[XGViewController class]]) {
         if (self.parentViewController.childViewControllers.count > 1) {
             [self.navigationController popViewControllerAnimated:YES];
         }
